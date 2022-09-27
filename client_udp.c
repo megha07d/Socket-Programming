@@ -43,6 +43,8 @@ bind(client_sock,(struct sockaddr*)&client,sizeof(client));
 
 recvfrom(client_sock,otp,sizeof(otp),0,(struct sockaddr*)&other,&ad);
 
+//other - server
+
 printf("\nclient got:%s\n",otp);
 
 close(client_sock);
